@@ -11,6 +11,13 @@ body{
 margin:0;
 font-family:Arial;
 background:#f4f7fb;
+color:#222;
+transition:0.3s;
+}
+
+.dark-mode{
+background:#121212;
+color:#e0e0e0;
 }
 
 header{
@@ -25,7 +32,6 @@ background:#ffefc1;
 text-align:center;
 padding:10px;
 font-weight:bold;
-border-bottom:2px solid #e0c97f;
 }
 
 nav{
@@ -39,10 +45,6 @@ color:white;
 margin:0 15px;
 text-decoration:none;
 font-weight:bold;
-}
-
-nav a:hover{
-text-decoration:underline;
 }
 
 .container{
@@ -59,23 +61,23 @@ text-align:center;
 border-right:1px solid #ddd;
 }
 
+.dark-mode .sidebar{
+background:#1e1e1e;
+}
+
 .sidebar img{
 width:180px;
 border-radius:50%;
-margin-bottom:15px;
-}
-
-.sidebar a{
-display:block;
-margin:8px 0;
-text-decoration:none;
-color:#1f3c88;
 }
 
 .main{
 flex:1;
 padding:35px;
 background:white;
+}
+
+.dark-mode .main{
+background:#1e1e1e;
 }
 
 h2{
@@ -94,12 +96,24 @@ border-radius:5px;
 cursor:pointer;
 }
 
-button:hover{
-background:#162c66;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
 }
 
-ul{
-line-height:1.7;
+.gallery img{
+width:100%;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.3);
+}
+
+.metrics{
+display:flex;
+gap:30px;
+font-size:18px;
+margin-top:15px;
 }
 
 footer{
@@ -110,7 +124,21 @@ color:white;
 margin-top:40px;
 }
 
+.toggle{
+position:absolute;
+right:20px;
+top:20px;
+}
+
 </style>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark-mode");
+}
+
+</script>
 
 </head>
 
@@ -125,6 +153,8 @@ Director’s Fellow | Fluid Mechanics Researcher
 Indian Institute of Technology Jodhpur
 </p>
 
+<button class="toggle" onclick="toggleMode()">🌙 Dark / Light</button>
+
 </header>
 
 <div class="notice">
@@ -136,8 +166,8 @@ Indian Institute of Technology Jodhpur
 <a href="#about">About</a>
 <a href="#research">Ongoing Research</a>
 <a href="#publications">Publications</a>
-<a href="#teaching">Teaching</a>
-<a href="#awards">Awards</a>
+<a href="#gallery">Figures</a>
+<a href="#metrics">Metrics</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -148,16 +178,16 @@ Indian Institute of Technology Jodhpur
 
 <img src="photo.jpg">
 
-<h2>Mrityunjoy Saha</h2>
+<h3>Mrityunjoy Saha</h3>
 
 <p>PhD Researcher<br>IIT Jodhpur</p>
 
-<a href="https://scholar.google.com">Google Scholar</a>
-<a href="https://orcid.org/0000-0001-5319-3705">ORCID</a>
-<a href="https://linkedin.com">LinkedIn</a>
+<a href="https://scholar.google.com">Google Scholar</a><br>
+<a href="https://orcid.org/0000-0001-5319-3705">ORCID</a><br>
+<a href="https://linkedin.com">LinkedIn</a><br>
 <a href="https://github.com">GitHub</a>
 
-<br>
+<br><br>
 
 <a href="MrityunjoySahaCV.pdf" download>
 <button>Download CV</button>
@@ -170,11 +200,12 @@ Indian Institute of Technology Jodhpur
 <h2 id="about">About Me</h2>
 
 <p>
-I am a researcher working in computational fluid dynamics and hydrodynamic stability. 
-My research focuses on instability mechanisms in complex flow systems including 
-rotating channel flows, porous media flows, and magnetohydrodynamic systems using 
-spectral numerical methods and high-performance computing.
+I am a researcher working in hydrodynamic stability and computational fluid
+dynamics. My work focuses on instability mechanisms in complex flow systems
+including rotating channel flows, porous media flows, and magnetohydrodynamic
+flows using spectral numerical methods and high-performance computing.
 </p>
+
 
 
 <h2 id="research">Ongoing Research</h2>
@@ -182,18 +213,19 @@ spectral numerical methods and high-performance computing.
 <ul>
 
 <li>
-Non-modal stability analysis and transient growth mechanisms in rotating channel flows.
+Non-modal transient growth analysis in rotating channel flows.
 </li>
 
 <li>
-Instability and transition mechanisms in porous media flows with anisotropic permeability.
+Instability mechanisms in anisotropic porous media flows.
 </li>
 
 <li>
-Spectral numerical methods for hydrodynamic stability analysis of complex fluid systems.
+Spectral numerical methods for hydrodynamic stability problems.
 </li>
 
 </ul>
+
 
 
 <h2 id="publications">Publications</h2>
@@ -215,32 +247,44 @@ M. Saha, S. Sengupta, S. Mukhopadhyay, and S. Ghosh, “Flow instability in a ro
 </ul>
 
 
-<h2 id="teaching">Teaching Experience</h2>
 
-<ul>
+<h2 id="gallery">Research Figure Gallery</h2>
 
-<li>Mathematics I – B.Tech</li>
-<li>Mathematics II – B.Tech</li>
-<li>Scientific Computation – B.Tech</li>
-<li>Mathematical Modelling and Simulation – M.Tech</li>
-<li>Deep Learning – M.Tech</li>
-<li>Introduction to Data Science – PG Diploma</li>
-<li>Applied Mathematics & Statistics – PG Diploma</li>
-<li>Abstract & Linear Algebra – Annual Foundation School</li>
-<li>Complex Analysis – Annual Foundation School</li>
+<div class="gallery">
 
-</ul>
+<img src="fig1.jpg">
+<img src="fig2.jpg">
+<img src="fig3.jpg">
+
+</div>
 
 
-<h2 id="awards">Awards & Recognition</h2>
 
-<ul>
+<h2 id="metrics">Citation Metrics</h2>
 
-<li>Director's Fellowship – IIT Jodhpur</li>
-<li>Graduate Teaching Assistantship – IIT Jodhpur</li>
-<li>APS Division of Fluid Dynamics Meeting 2025 – Houston, USA</li>
+<div class="metrics">
 
-</ul>
+<div>
+<b>Citations</b><br>
+XX
+</div>
+
+<div>
+<b>h-index</b><br>
+X
+</div>
+
+<div>
+<b>i10-index</b><br>
+X
+</div>
+
+</div>
+
+<p>
+(Updated from Google Scholar)
+</p>
+
 
 
 <h2 id="contact">Contact</h2>
@@ -253,19 +297,19 @@ Email: saha.8@iitj.ac.in
 </p>
 
 
+
 <h2>Acknowledgement</h2>
 
 <p>
-This webpage is hosted using GitHub Pages. Initial layout and design assistance 
-was supported by AI tools, including ChatGPT and Gemini.
+This website is hosted using GitHub Pages. Initial webpage layout and
+development assistance were supported by AI tools, including ChatGPT and Gemini.
 </p>
+
 
 
 <h2>Visitor Counter</h2>
 
-<p>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=saha-mrityunjoy.github.io">
-</p>
 
 </div>
 
