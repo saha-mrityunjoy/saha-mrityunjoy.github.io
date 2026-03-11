@@ -5,6 +5,8 @@
 
 <title>Mrityunjoy Saha</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
 body{
@@ -63,8 +65,11 @@ margin:auto;
 width:280px;
 background:white;
 padding:25px;
-text-align:center;
 border-right:1px solid #ddd;
+
+display:flex;
+flex-direction:column;
+height:100vh;
 }
 
 .dark-mode .sidebar{
@@ -72,15 +77,26 @@ background:#1e1e1e;
 }
 
 .sidebar img{
-width:180px;
+width:170px;
 border-radius:50%;
+display:block;
+margin:auto;
+}
+
+.sidebar h3{
+text-align:center;
 }
 
 .sidebar a{
 display:block;
-margin:6px 0;
+margin:8px 0;
 text-decoration:none;
 color:#1f3c88;
+font-size:15px;
+}
+
+.sidebar i{
+margin-right:8px;
 }
 
 .main{
@@ -129,6 +145,18 @@ font-size:18px;
 margin-top:20px;
 }
 
+.paper{
+padding:15px;
+border-left:4px solid #1f3c88;
+background:#f9fbff;
+margin-bottom:15px;
+}
+
+.dark-mode .paper{
+background:#1b1b1b;
+border-left:4px solid #4a7cff;
+}
+
 footer{
 text-align:center;
 padding:20px;
@@ -140,7 +168,6 @@ margin-top:40px;
 .small{
 font-size:13px;
 color:#555;
-margin-top:15px;
 }
 
 </style>
@@ -193,15 +220,26 @@ Indian Institute of Technology Jodhpur
 
 <h3>Mrityunjoy Saha</h3>
 
-<p>PhD Researcher<br>IIT Jodhpur</p>
+<p style="text-align:center">
+PhD Researcher<br>
+IIT Jodhpur
+</p>
 
-<a href="https://scholar.google.com/citations?hl=en&user=EuCJEhEAAAAJ" target="_blank">Google Scholar</a>
+<a href="https://scholar.google.com/citations?hl=en&user=EuCJEhEAAAAJ" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i> Google Scholar
+</a>
 
-<a href="https://orcid.org/0000-0001-5319-3705" target="_blank">ORCID</a>
+<a href="https://orcid.org/0000-0001-5319-3705" target="_blank">
+<i class="fa-brands fa-orcid"></i> ORCID
+</a>
 
-<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+<a href="https://www.linkedin.com" target="_blank">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
 
-<a href="https://github.com" target="_blank">GitHub</a>
+<a href="https://github.com" target="_blank">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
 
 <br>
 
@@ -209,7 +247,7 @@ Indian Institute of Technology Jodhpur
 <button>Download CV</button>
 </a>
 
-<br><br>
+<div style="margin-top:auto">
 
 <h4>Visitor Count</h4>
 
@@ -218,9 +256,11 @@ Indian Institute of Technology Jodhpur
 <div class="small">
 
 <p>
-This website is hosted using GitHub Pages.  
+This website is hosted using GitHub Pages.<br>
 Initial webpage design assistance from ChatGPT and Gemini.
 </p>
+
+</div>
 
 </div>
 
@@ -231,50 +271,58 @@ Initial webpage design assistance from ChatGPT and Gemini.
 <h2 id="about">About Me</h2>
 
 <p>
-I work in hydrodynamic stability and computational fluid dynamics. My research
-focuses on instability mechanisms in rotating channel flows, porous media flows,
-and magnetohydrodynamic systems using spectral numerical methods and
-high-performance computing.
+I work in hydrodynamic stability and computational fluid dynamics. My research focuses on instability mechanisms in rotating channel flows, porous media flows, and magnetohydrodynamic systems using spectral numerical methods and high-performance computing.
 </p>
-
 
 <h2 id="research">Ongoing Research</h2>
 
 <ul>
 
-<li>
-Non-modal transient growth analysis in rotating channel flows.
-</li>
+<li>Non-modal transient growth analysis in rotating channel flows.</li>
 
-<li>
-Instability mechanisms in anisotropic porous media flows.
-</li>
+<li>Instability mechanisms in anisotropic porous media flows.</li>
 
-<li>
-Spectral numerical methods for hydrodynamic stability problems.
-</li>
+<li>Spectral numerical methods for hydrodynamic stability problems.</li>
 
 </ul>
-
 
 <h2 id="publications">Publications</h2>
 
-<ul>
+<div class="paper">
 
-<li>
-M. Saha and S. Ghosh, “On the magnetohydrodynamic instability pattern of an anisotropic porous media flow in a rotating channel,” Physics of Fluids, 38(1), 014122 (2026).
-</li>
+<b>M. Saha and S. Ghosh</b>,  
+“On the magnetohydrodynamic instability pattern of an anisotropic porous media flow in a rotating channel,”  
+<i>Physics of Fluids</i>, vol. 38(1), pp. 014122, 2026.
 
-<li>
-M. M. Hossain, M. Saha, S. Ghosh, and H. Behera, “Stability dynamics of an odd viscosity induced fluid flow over a vibrating inclined surface,” Physics of Fluids, 37(10), 104108 (2025).
-</li>
+<br>
 
-<li>
-M. Saha, S. Sengupta, S. Mukhopadhyay, and S. Ghosh, “Flow instability in a rotating channel loaded with an anisotropic porous material,” Computers & Fluids, 299, 106689 (2025).
-</li>
+<a href="https://doi.org/10.1063/5.0307689" target="_blank">🔗 DOI Link</a>
 
-</ul>
+</div>
 
+<div class="paper">
+
+<b>M. M. Hossain, M. Saha, S. Ghosh, and H. Behera</b>,  
+“Stability dynamics of an odd viscosity induced fluid flow over a vibrating inclined surface,”  
+<i>Physics of Fluids</i>, vol. 37(10), pp. 104108, 2025.
+
+<br>
+
+<a href="https://doi.org/10.1063/5.0291294" target="_blank">🔗 DOI Link</a>
+
+</div>
+
+<div class="paper">
+
+<b>M. Saha, S. Sengupta, S. Mukhopadhyay, and S. Ghosh</b>,  
+“Flow instability in a rotating channel loaded with an anisotropic porous material,”  
+<i>Computers & Fluids</i>, vol. 299, pp. 106689, 2025.
+
+<br>
+
+<a href="https://doi.org/10.1016/j.compfluid.2025.106689" target="_blank">🔗 DOI Link</a>
+
+</div>
 
 <h2 id="figures">Research Figure Gallery</h2>
 
@@ -285,7 +333,6 @@ M. Saha, S. Sengupta, S. Mukhopadhyay, and S. Ghosh, “Flow instability in a ro
 <img src="fig3.jpg">
 
 </div>
-
 
 <h2 id="metrics">Citation Metrics</h2>
 
@@ -308,15 +355,10 @@ See Google Scholar
 
 </div>
 
-
 <h2 id="contact">Contact</h2>
 
 <p>
-
-Email: saha.8@iitj.ac.in  
-<br>
-Alternate Email: mrityunjoy.iitj@gmail.com
-
+Email: saha.8@iitj.ac.in
 </p>
 
 </div>
