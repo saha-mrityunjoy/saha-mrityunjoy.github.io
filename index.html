@@ -2,46 +2,116 @@
 <html>
 
 <head>
+
 <title>Mrityunjoy Saha</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
-margin:40px auto;
-max-width:900px;
-line-height:1.6;
-color:#333;
-padding:0 10px;
+margin:0;
+font-family:Arial;
+background:#f4f7fb;
 }
 
-h1{
-color:#2c3e50;
+header{
+background:#1f3c88;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.notice{
+background:#ffefc1;
+text-align:center;
+padding:10px;
+font-weight:bold;
+border-bottom:2px solid #e0c97f;
+}
+
+.container{
+display:flex;
+max-width:1200px;
+margin:auto;
+}
+
+.sidebar{
+width:280px;
+background:#ffffff;
+padding:25px;
+text-align:center;
+border-right:1px solid #ddd;
+}
+
+.sidebar img{
+width:180px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+.sidebar h2{
+color:#1f3c88;
+}
+
+.sidebar a{
+display:block;
+margin:8px 0;
+text-decoration:none;
+color:#1f3c88;
+}
+
+.main{
+flex:1;
+padding:35px;
+background:white;
+}
+
+nav{
+background:#2a5298;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
 }
 
 h2{
-border-bottom:2px solid #ddd;
+color:#1f3c88;
+border-bottom:2px solid #2a5298;
 padding-bottom:5px;
 margin-top:40px;
 }
 
-a{
-color:#0066cc;
-text-decoration:none;
-}
-
 button{
-background:#2c3e50;
+background:#1f3c88;
 color:white;
 border:none;
 padding:10px 18px;
-font-size:16px;
 border-radius:5px;
 cursor:pointer;
 }
 
 button:hover{
-background:#1a252f;
+background:#162c66;
+}
+
+ul{
+line-height:1.7;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#1f3c88;
+color:white;
+margin-top:40px;
 }
 
 </style>
@@ -50,117 +120,181 @@ background:#1a252f;
 
 <body>
 
+<header>
+
 <h1>Mrityunjoy Saha</h1>
 
 <p>
-Director’s Fellow<br>
-Indian Institute of Technology Jodhpur, India
+Director’s Fellow | Fluid Mechanics Researcher<br>
+Indian Institute of Technology Jodhpur
 </p>
 
+</header>
+
+<div class="notice">
+
+⚠️ This webpage is currently under maintenance and content updates are ongoing.
+
+</div>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#teaching">Teaching</a>
+<a href="#awards">Awards</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="sidebar">
+
+<img src="photo.jpg">
+
+<h2>Mrityunjoy Saha</h2>
+
 <p>
-CFD | Mathematical Modeling | Numerical Simulations
+PhD Researcher<br>
+IIT Jodhpur
 </p>
 
-<p>
-
-<a href="https://scholar.google.com">Google Scholar</a> |
-<a href="https://orcid.org/0000-0001-5319-3705">ORCID</a> |
-<a href="https://linkedin.com">LinkedIn</a> |
+<a href="https://scholar.google.com">Google Scholar</a>
+<a href="https://orcid.org/0000-0001-5319-3705">ORCID</a>
+<a href="https://linkedin.com">LinkedIn</a>
 <a href="https://github.com">GitHub</a>
 
-</p>
+<br>
 
-<p>
 <a href="MrityunjoySahaCV.pdf" download>
 <button>Download CV</button>
 </a>
-</p>
 
-<h2>About Me</h2>
+</div>
 
-<p>
-Computational fluid dynamics researcher with experience in numerical simulation of complex flow
-systems using spectral collocation methods and scientific computing. Skilled in C/C++, Python,
-MATLAB, and HPC-based computations. Published in leading journals such as Physics of Fluids
-and Computers & Fluids. Interested in applying mathematical modeling and simulation techniques
-to engineering problems in aerospace systems and autonomous technologies.
-</p>
+<div class="main">
 
-<h2>Research Interests</h2>
-
-<ul>
-
-<li>Computational Fluid Dynamics</li>
-<li>Hydrodynamic Stability</li>
-<li>Porous Media Flows</li>
-<li>Numerical Methods for PDEs</li>
-
-</ul>
-
-<h2>Education</h2>
-
-<ul>
-
-<li>
-Ph.D. in Fluid Mechanics (2021–2025)<br>
-Indian Institute of Technology Jodhpur<br>
-Thesis: Hydrodynamic Stability Analysis on a Class of Complex Flow Systems (Submitted)
-</li>
-
-<li>
-M.Sc. in Mathematics (Applied Mathematics) (2018–2020)<br>
-Cooch Behar Panchanan Barma University<br>
-CGPA: 8.19
-</li>
-
-<li>
-B.Sc. (Hons.) in Mathematics (2015–2018)<br>
-Dinhata College, Cooch Behar Panchanan Barma University<br>
-Percentage: 62.5
-</li>
-
-</ul>
-
-<h2>Publications</h2>
-
-<ul>
-
-<li>
-M. Saha and S. Ghosh, “On the magnetohydrodynamic instability pattern of an anisotropic porous media flow in a rotating channel,” Physics of Fluids, vol. 38(1), pp. 014122, 2026.
-</li>
-
-<li>
-M. M. Hossain, M. Saha, S. Ghosh, and H. Behera, “Stability dynamics of an odd viscosity induced fluid flow over a vibrating inclined surface,” Physics of Fluids, vol. 37(10), pp. 104108, 2025.
-</li>
-
-<li>
-M. Saha, S. Sengupta, S. Mukhopadhyay, and S. Ghosh, “Flow instability in a rotating channel loaded with an anisotropic porous material,” Computers & Fluids, vol. 299, pp. 106689, 2025.
-</li>
-
-</ul>
-
-<h2>Conference Presentations</h2>
-
-<ul>
-
-<li>
-78th Annual Meeting of the APS Division of Fluid Dynamics (APS DFD 2025), Houston, Texas, USA.
-</li>
-
-<li>
-International Conference on Recent Advances in Fluid Mechanics and Nanoelectronics (ICRAFMN 2023), MIT, Bengaluru, India.
-</li>
-
-</ul>
-
-<h2>Contact</h2>
+<h2 id="about">About Me</h2>
 
 <p>
+I am a computational fluid dynamics researcher specializing in hydrodynamic
+stability and numerical simulations of complex flow systems. My research
+focuses on instability mechanisms in rotating channel flows, porous media
+flows, and magnetohydrodynamic systems using spectral methods and high
+performance computing.
+</p>
 
-Institute Email: saha.8@iitj.ac.in<br>
 
+
+<h2 id="research">Research Projects</h2>
+
+<ul>
+
+<li>
+Hydrodynamic instability analysis of rotating channel flows loaded with
+anisotropic porous media.
+</li>
+
+<li>
+Magnetohydrodynamic instability patterns in complex channel flow systems.
+</li>
+
+<li>
+Odd-viscosity induced instability of fluid flow over vibrating inclined
+surfaces.
+</li>
+
+</ul>
+
+
+
+<h2 id="publications">Publications</h2>
+
+<ul>
+
+<li>
+M. Saha and S. Ghosh, “On the magnetohydrodynamic instability pattern of an
+anisotropic porous media flow in a rotating channel,” Physics of Fluids,
+38(1), 014122 (2026).
+</li>
+
+<li>
+M. M. Hossain, M. Saha, S. Ghosh, and H. Behera, “Stability dynamics of an
+odd viscosity induced fluid flow over a vibrating inclined surface,”
+Physics of Fluids, 37(10), 104108 (2025).
+</li>
+
+<li>
+M. Saha, S. Sengupta, S. Mukhopadhyay, and S. Ghosh,
+“Flow instability in a rotating channel loaded with an anisotropic porous
+material,” Computers & Fluids, 299, 106689 (2025).
+</li>
+
+</ul>
+
+
+
+<h2 id="teaching">Teaching Experience</h2>
+
+<ul>
+
+<li>Mathematics I – B.Tech</li>
+<li>Mathematics II – B.Tech</li>
+<li>Scientific Computation – B.Tech</li>
+<li>Mathematical Modelling and Simulation – M.Tech</li>
+<li>Deep Learning – M.Tech</li>
+<li>Introduction to Data Science – PG Diploma</li>
+<li>Applied Mathematics & Statistics – PG Diploma</li>
+<li>Abstract & Linear Algebra – Annual Foundation School</li>
+<li>Complex Analysis – Annual Foundation School</li>
+
+</ul>
+
+
+
+<h2 id="awards">Awards & Grants</h2>
+
+<ul>
+
+<li>Director's Fellowship – IIT Jodhpur</li>
+<li>Graduate Teaching Assistantship – IIT Jodhpur</li>
+<li>APS Division of Fluid Dynamics Meeting 2025 – Houston, USA</li>
+
+</ul>
+
+
+
+<h2 id="contact">Contact</h2>
+
+<p>
+
+Email: saha.8@iitj.ac.in<br>
+Alternate Email: mrityunjoy.iitj@gmail.com
 
 </p>
+
+
+
+<h2>Acknowledgement</h2>
+
+<p>
+
+This website is hosted using GitHub Pages. Initial webpage design and layout
+were developed with assistance from AI tools, including ChatGPT and Gemini.
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Mrityunjoy Saha
+
+</footer>
 
 </body>
 
