@@ -610,6 +610,44 @@ color:#1f3c88;
 margin-right:6px;
 }
 
+/* News accordion title */
+
+.news-title{
+cursor:pointer;
+font-weight:600;
+color:#1f3c88;
+padding:6px 4px;
+border-radius:4px;
+transition:background 0.2s ease;
+}
+
+.dark-mode .news-title{
+color:#7aa2ff;
+}
+
+/* arrow indicator */
+
+.news-title::before{
+content:"▶";
+display:inline-block;
+margin-right:8px;
+transition:transform 0.25s ease;
+}
+
+details[open] .news-title::before{
+transform:rotate(90deg);
+}
+
+/* hover highlight */
+
+.news-title:hover{
+background:#eef2ff;
+}
+
+.dark-mode .news-title:hover{
+background:#2b3350;
+}
+  
 /* Footer */
 footer{
 text-align:center;
@@ -1006,18 +1044,9 @@ Teaching Assistant — Indian Institute of Technology Jodhpur
 
 <div class="paper">
 
-<h3>Upcoming</h3>
+<details open>
 
-<div class="timeline">
-
-<div class="timeline-item">
-<span class="timeline-date">April 2026</span>
-Ph.D. thesis defense at the Indian Institute of Technology Jodhpur.
-</div>
-
-</div>
-
-<h3>Recent Updates</h3>
+<summary class="news-title">Recent Updates</summary>
 
 <div class="timeline">
 
@@ -1038,10 +1067,12 @@ Presented research at the APS Division of Fluid Dynamics Meeting, Houston, USA.
 
 </div>
 
+</details>
+
 
 <details>
 
-<summary><b>Past Updates</b></summary>
+<summary class="news-title">Past Updates</summary>
 
 <div class="timeline">
 
@@ -1064,12 +1095,10 @@ Presented doctoral research proposal on hydrodynamic stability at the Indian Ins
 <span class="timeline-date">July 2023</span>
 Presented research at the International Conference on Recent Advances in Fluid Mechanics and Nanoelectronics.
 </div>
-  
-</div>
 
 </div>
 
-</div>
+</details>
 
 </div>
 
