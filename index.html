@@ -571,16 +571,17 @@ box-shadow:0 4px 12px rgba(0,0,0,0.35);
 }
   
 /* Timeline */
+/* Professional research timeline */
+
 .timeline{
 position:relative;
 margin-top:20px;
-padding-left:25px;
 }
 
 .timeline::before{
-content:'';
+content:"";
 position:absolute;
-left:6px;
+left:120px;
 top:0;
 width:2px;
 height:100%;
@@ -588,15 +589,17 @@ background:#1f3c88;
 }
 
 .timeline-item{
+display:grid;
+grid-template-columns:110px 1fr;
+gap:15px;
 position:relative;
 margin-bottom:18px;
-padding-left:15px;
 }
 
-.timeline-item::before{
-content:'';
+.timeline-item::after{
+content:"";
 position:absolute;
-left:-4px;
+left:115px;
 top:6px;
 width:10px;
 height:10px;
@@ -605,9 +608,18 @@ border-radius:50%;
 }
 
 .timeline-date{
-font-weight:bold;
+font-weight:600;
 color:#1f3c88;
-margin-right:6px;
+text-align:right;
+padding-right:10px;
+}
+
+.dark-mode .timeline-date{
+color:#8fb3ff;
+}
+
+.timeline-content{
+padding-left:10px;
 }
   
 .timeline-icon{
