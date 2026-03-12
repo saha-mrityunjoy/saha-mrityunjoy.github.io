@@ -292,14 +292,30 @@ align-items:center;
 display:block;
 }
 
-/* Fixed profile block */
+/* Profile identity card */
 
 .profile-fixed{
 position:sticky;
 top:20px;
-background:inherit;
-padding-bottom:10px;
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+margin-bottom:20px;
 z-index:10;
+text-align:center;
+}
+
+/* Dark mode */
+
+.dark-mode .profile-fixed{
+background:#262b36;
+box-shadow:0 3px 12px rgba(0,0,0,0.6);
+}
+
+.profile-fixed:hover{
+transform:translateY(-3px);
+transition:0.2s ease;
 }
   
 /* Main content */
