@@ -252,7 +252,32 @@ border-left:4px solid #4c8dff;
 .dark-mode a{
 color:#7aa2ff;
 }
-  
+ /* Publication card */
+
+.paper{
+padding:18px 18px 16px 18px;
+border-left:4px solid #1f3c88;
+background:#f9fbff;
+margin-bottom:18px;
+border-radius:6px;
+line-height:1.5;
+transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.paper:hover{
+transform:translateY(-2px);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dark-mode .paper{
+background:#262b36;
+border-left:4px solid #4c8dff;
+box-shadow:none;
+}
+
+.dark-mode a{
+color:#7aa2ff;
+} 
 /* Research gallery */
 .gallery{
 display:grid;
