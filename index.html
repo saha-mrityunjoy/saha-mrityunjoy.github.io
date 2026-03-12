@@ -276,6 +276,22 @@ font-size:18px;
 margin-top:20px;
 }
 
+/* Resources */
+details{
+margin:10px 0;
+}
+
+summary{
+cursor:pointer;
+font-weight:bold;
+color:#1f3c88;
+margin-bottom:6px;
+}
+
+.dark-mode summary{
+color:#7aa2ff;
+}
+  
 /* Timeline */
 .timeline{
 position:relative;
@@ -631,31 +647,53 @@ Indian Institute of Technology Jodhpur<br>
 
 <div class="paper">
 
-<h3>Course Materials</h3>
-
-<ul>
-<li><a href="#">Linear Algebra Notes</a></li>
-<li><a href="#">Scientific Computing MATLAB Codes</a></li>
-<li><a href="#">Complex Analysis Problem Sets</a></li>
-<li><a href="#">Data Science Tutorial Materials</a></li>
-</ul>
-
-</div>
-
-
-<div class="paper">
-
-<h3>Books and References</h3>
+<details open>
+<summary><b>Recommended Books</b></summary>
 
 <ul>
 <li>Hydrodynamic Stability – P. G. Drazin & W. H. Reid</li>
 <li>Computational Fluid Dynamics – J. D. Anderson</li>
-<li>Numerical Recipes in Scientific Computing</li>
 <li>Spectral Methods in MATLAB – Lloyd N. Trefethen</li>
+<li>Numerical Recipes in Scientific Computing</li>
 </ul>
+
+</details>
+
+<details>
+<summary><b>Lecture Notes</b></summary>
+
+<ul>
+<li><a href="#">Linear Algebra Notes</a></li>
+<li><a href="#">Complex Analysis Notes</a></li>
+<li><a href="#">Mathematical Modeling Notes</a></li>
+</ul>
+
+</details>
+
+<details>
+<summary><b>MATLAB / Computational Codes</b></summary>
+
+<ul>
+<li><a href="#">Orr–Sommerfeld Stability Solver</a></li>
+<li><a href="#">Chebyshev Spectral Collocation Template</a></li>
+<li><a href="#">Eigenvalue Stability Analysis Code</a></li>
+</ul>
+
+</details>
+
+<details>
+<summary><b>Datasets / Miscellaneous</b></summary>
+
+<ul>
+<li><a href="#">Fluid Stability Benchmark Data</a></li>
+<li><a href="#">Spectral Method Examples</a></li>
+</ul>
+
+</details>
 
 </div>
 
+  <!--    News    -->
 <h2 id="newsletter">News</h2>
 
 <div class="paper">
