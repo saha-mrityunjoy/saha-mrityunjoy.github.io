@@ -246,6 +246,57 @@ font-size:13px;
 color:#555;
 }
 
+.collab-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.collab-card{
+text-align:center;
+background:#f9fbff;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+transition:transform 0.2s;
+}
+
+.collab-card:hover{
+transform:translateY(-5px);
+}
+
+.collab-card img{
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:10px;
+}
+
+.collab-name{
+font-weight:bold;
+color:#1f3c88;
+margin-bottom:4px;
+}
+
+.collab-inst{
+font-size:14px;
+color:#555;
+margin-bottom:6px;
+}
+
+.collab-links a{
+margin:0 5px;
+color:#1f3c88;
+text-decoration:none;
+font-size:18px;
+}
+
+.dark-mode .collab-card{
+background:#1b1b1b;
+}
+
 </style>
 
 <script>
@@ -263,8 +314,7 @@ document.body.classList.toggle("dark-mode");
 <h1>Mrityunjoy Saha</h1>
 
 <p>
-Director’s Fellow | Fluid Mechanics Researcher  
-Indian Institute of Technology Jodhpur
+Director’s Fellow | Indian Institute of Technology Jodhpur
 </p>
 
 <button class="toggle" onclick="toggleMode()">🌙 Dark / Light</button>
@@ -284,8 +334,10 @@ APS Division of Fluid Dynamics Meeting 2025 – Houston, USA
 <a href="#about">About</a>
 <a href="#research">Ongoing Research</a>
 <a href="#publications">Publications</a>
+<a href="#collaborators">Collaborators</a>
 <a href="#figures">Research Gallery</a>
 <a href="#metrics">Metrics</a>
+<a href="#newsletter">News</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -336,10 +388,6 @@ IIT Jodhpur
 <p>
 This website is hosted using GitHub Pages.<br>
 Initial webpage design gets assistance from ChatGPT and Gemini.
-</p>
-
-<p style="margin-top:10px;">
-© 2026 Mrityunjoy Saha
 </p>
 
 </div>
@@ -395,6 +443,96 @@ I work in hydrodynamic stability and computational fluid dynamics. My research f
 
 </div>
 
+<h2 id="collaborators">Research Collaborators</h2>
+
+<div class="collab-grid">
+
+<div class="collab-card">
+<img src="ghosh.jpg" alt="Prof. S. Ghosh">
+<div class="collab-name">Prof. S. Ghosh</div>
+<div class="collab-inst">IIT Jodhpur</div>
+<div class="collab-links">
+<a href="https://scholar.google.com" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="mukhopadhyay.jpg" alt="Dr. S. Mukhopadhyay">
+<div class="collab-name">Dr. S. Mukhopadhyay</div>
+<div class="collab-links">
+<a href="https://scholar.google.com" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="sengupta.jpg" alt="Dr. S. Sengupta">
+<div class="collab-name">Dr. S. Sengupta</div>
+<div class="collab-links">
+<a href="https://scholar.google.com" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="sahu.jpg" alt="Prof. Kirti Chandra Sahu">
+<div class="collab-name">Prof. Kirti Chandra Sahu</div>
+<div class="collab-inst">IIT Hyderabad</div>
+<div class="collab-links">
+<a href="https://scholar.google.com/citations?user=vC4-39kAAAAJ" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="roy.jpg" alt="Dr. Monish Roy">
+<div class="collab-name">Dr. Monish Roy</div>
+<div class="collab-inst">NIT Rourkela</div>
+<div class="collab-links">
+<a href="https://scholar.google.com/" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="hossain.jpg" alt="Dr. M. M. Hossain">
+<div class="collab-name">Dr. M. M. Hossain</div>
+<div class="collab-links">
+<a href="https://scholar.google.com" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="behera.jpg" alt="Dr. H. Behera">
+<div class="collab-name">Dr. H. Behera</div>
+<div class="collab-links">
+<a href="https://scholar.google.com" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+<div class="collab-card">
+<img src="mishra.jpg" alt="Prof. Manoranjan Mishra">
+<div class="collab-name">Prof. Manoranjan Mishra</div>
+<div class="collab-inst">IIT Ropar</div>
+<div class="collab-links">
+<a href="https://scholar.google.com/" target="_blank">
+<i class="fa-solid fa-graduation-cap"></i>
+</a>
+</div>
+</div>
+
+</div>
+  
 <h2 id="figures">Research Gallery</h2>
 
 <div class="gallery">
