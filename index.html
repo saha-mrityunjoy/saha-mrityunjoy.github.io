@@ -254,6 +254,20 @@ display:block;
 margin:12px auto;
 }
   
+/* Sidebar citation metrics */
+
+.sidebar-metrics{
+margin-top:15px;
+display:flex;
+flex-direction:column;
+gap:6px;
+align-items:center;
+}
+
+.sidebar-metrics img{
+display:block;
+}
+  
 /* Main content */
 .main{
 flex:1;
@@ -1030,6 +1044,19 @@ Director’s Fellow | CFD Researcher | Indian Institute of Technology Jodhpur
 <button>R&D CV</button> <!--  class="cv-btn" -->
 </a>
 
+
+<!-- Citation Metrics -->
+
+<div class="sidebar-metrics">
+
+<img src="https://img.shields.io/badge/dynamic/json?label=Citations&query=$.citedby&url=https://scholar-badge-service.vercel.app/api/scholar?user=EuCJEhEAAAAJ">
+
+<img src="https://img.shields.io/badge/dynamic/json?label=h--index&query=$.hindex&url=https://scholar-badge-service.vercel.app/api/scholar?user=EuCJEhEAAAAJ">
+
+<img src="https://img.shields.io/badge/dynamic/json?label=i10--index&query=$.i10index&url=https://scholar-badge-service.vercel.app/api/scholar?user=EuCJEhEAAAAJ">
+
+</div>
+  
 <div style="margin-top:auto">
 
 <!--
@@ -1141,6 +1168,7 @@ Flow instability in a rotating channel loaded with an anisotropic porous materia
 
 </div>
 
+<!--
 <h2 id="metrics" class="fade-section">Citation Metrics</h2>
 
 <div class="paper fade-section">
@@ -1156,7 +1184,7 @@ Flow instability in a rotating channel loaded with an anisotropic porous materia
 <img src="https://img.shields.io/badge/dynamic/json?label=i10--index&query=$.i10index&url=https://scholar-badge-service.vercel.app/api/scholar?user=EuCJEhEAAAAJ">
 
 </div>
-  
+-->  
 
 <h2 id="teaching" class="fade-section">Teaching Experience</h2>
 
