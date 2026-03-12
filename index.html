@@ -9,6 +9,10 @@
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 margin:0;
 font-family:Arial;
@@ -29,13 +33,6 @@ padding:25px;
 text-align:center;
 }
 
-  
-details summary{
-cursor:pointer;
-margin-top:10px;
-color:#1f3c88;
-}
-
 .toggle{
 position:absolute;
 right:20px;
@@ -47,6 +44,16 @@ background:#ffefc1;
 text-align:center;
 padding:10px;
 font-weight:bold;
+}
+
+details summary{
+cursor:pointer;
+margin-top:10px;
+color:#1f3c88;
+}
+
+.dark-mode details summary{
+color:#7aa2ff;
 }
 
 .banner{
@@ -176,6 +183,54 @@ display:flex;
 gap:40px;
 font-size:18px;
 margin-top:20px;
+}
+
+.timeline{
+position:relative;
+margin-top:20px;
+padding-left:25px;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:6px;
+top:0;
+width:2px;
+height:100%;
+background:#1f3c88;
+}
+
+.timeline-item{
+position:relative;
+margin-bottom:18px;
+padding-left:15px;
+line-height:1.5;
+}
+
+.timeline-item::before{
+content:'';
+position:absolute;
+left:-4px;
+top:6px;
+width:10px;
+height:10px;
+background:#1f3c88;
+border-radius:50%;
+}
+
+.timeline-date{
+font-weight:bold;
+color:#1f3c88;
+margin-right:6px;
+}
+
+.dark-mode .timeline::before{
+background:#4a7cff;
+}
+
+.dark-mode .timeline-item::before{
+background:#4a7cff;
 }
 
 footer{
@@ -371,47 +426,72 @@ See Google Scholar
 
 </div>
 
+
 <h2 id="newsletter">News</h2>
 
 <div class="paper">
 
 <h3>Upcoming</h3>
 
-<ul>
+<div class="timeline">
 
-<li><b>📢 April 2026</b> — Ph.D. thesis defense at Indian Institute of Technology Jodhpur.</li>
+<div class="timeline-item">
+<span class="timeline-date">Mar 2026</span>
+Ph.D. thesis defense at Indian Institute of Technology Jodhpur.
+</div>
 
-</ul>
+</div>
 
 
 <h3>Recent Updates</h3>
 
-<ul>
+<div class="timeline">
 
-<li><b>Jan 2026</b> — Paper published in <i>Physics of Fluids</i>.</li>
+<div class="timeline-item">
+<span class="timeline-date">Jan 2026</span>
+Paper published in <i>Physics of Fluids</i>.
+</div>
 
-<li><b>Dec 2025</b> — Ph.D. thesis submitted at Indian Institute of Technology Jodhpur.</li>
+<div class="timeline-item">
+<span class="timeline-date">Dec 2025</span>
+Ph.D. thesis submitted at Indian Institute of Technology Jodhpur.
+</div>
 
-<li><b>Nov 2025</b> — Presented research at the APS Division of Fluid Dynamics Meeting, Houston, USA.</li>
+<div class="timeline-item">
+<span class="timeline-date">Nov 2025</span>
+Presented research at the APS Division of Fluid Dynamics Meeting, Houston, USA.
+</div>
 
-</ul>
+</div>
 
 
 <details>
 
 <summary><b>Past Updates</b></summary>
 
-<ul>
+<div class="timeline">
 
-<li><b>Oct 2025</b> — Paper published in <i>Physics of Fluids</i>.</li>
+<div class="timeline-item">
+<span class="timeline-date">Oct 2025</span>
+Paper published in <i>Physics of Fluids</i>.
+</div>
 
-<li><b>Jul 2025</b> — Paper published in <i>Computers & Fluids</i>.</li>
+<div class="timeline-item">
+<span class="timeline-date">Jul 2025</span>
+Paper published in <i>Computers & Fluids</i>.
+</div>
 
-<li><b>Dec 2024</b> — Completed research work on hydrodynamic stability.</li>
+<div class="timeline-item">
+<span class="timeline-date">Dec 2024</span>
+Completed research work on hydrodynamic stability.
+</div>
 
-<li><b>2023</b> — Presented research at the International Conference on Recent Advances in Fluid Mechanics and Nanoelectronics.</li>
+<div class="timeline-item">
+<span class="timeline-date">2023</span>
+Presented research at the International Conference on Recent Advances in Fluid Mechanics and Nanoelectronics.
+</div>
 
-</ul>
+</div>
 
 </details>
 
