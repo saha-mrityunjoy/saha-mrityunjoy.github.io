@@ -59,12 +59,29 @@ font-size:28px;
 text-shadow:2px 2px 8px rgba(0,0,0,0.8);
 }
 
+/* Dark/Light Toggle */
 .toggle{
-position:absolute;
-right:20px;
-top:20px;
+position:fixed;
+top:30px;
+right:30px;
+font-size:18px;
+background:#1f3c88;
+color:white;
+cursor:pointer;
+padding:10px 14px;
+border-radius:50%;
+border:none;
+z-index:2000;
 }
 
+.toggle:hover{
+transform:scale(1.05);
+}
+
+.dark-mode .toggle{
+background:#4c8dff;
+}
+  
 /* Notice */
 .notice{
 background:#ffefc1;
