@@ -78,7 +78,6 @@ linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
 url('images/houston1.jpg');
 background-size:cover;
 background-position:center 30%;
-
 display:flex;
 justify-content:center;
 align-items:center;
@@ -110,36 +109,45 @@ margin:auto;
 .sidebar{
 width:280px;
 background:white;
-padding:25px;
+padding:25px 20px;
 border-right:1px solid #ddd;
 display:flex;
 flex-direction:column;
 min-height:100vh;
+text-align:center;
 }
 
 .dark-mode .sidebar{
 background:#1e1e1e;
 }
 
+/* Profile image improved */
 .sidebar img{
-width:170px;
+width:150px;
+height:150px;
 border-radius:50%;
+object-fit:cover;
 display:block;
-margin:auto;
+margin:0 auto 10px auto;
 }
 
+/* Name spacing */
 .sidebar h3{
 text-align:center;
+margin-top:5px;
+margin-bottom:10px;
 }
 
+/* Social links compact */
 .sidebar a{
 display:block;
-margin:8px 0;
+margin:6px 0;
 text-decoration:none;
 color:#1f3c88;
 font-size:15px;
 }
 
+/* Contact spacing */
 .sidebar p{
 margin:6px 0;
 }
@@ -284,7 +292,6 @@ height:320px;
 background-position:center 30%;
 }
 
-/* Fix header overlap on mobile */
 header{
 position:relative;
 top:auto;
@@ -293,7 +300,6 @@ transform:none;
 padding-top:80px;
 }
 
-/* Mobile font sizes */
 header h1{
 font-size:34px;
 }
@@ -302,7 +308,6 @@ header p{
 font-size:16px;
 }
 
-/* Navigation */
 nav{
 font-size:12px;
 }
@@ -312,7 +317,6 @@ margin:0 6px;
 font-size:13px;
 }
 
-/* Stack layout */
 .container{
 flex-direction:column;
 }
@@ -382,7 +386,7 @@ Director’s Fellow | CFD Researcher | Indian Institute of Technology Jodhpur
 
 <div class="sidebar">
 
-<img src="images/profile.jpg"  loading="lazy" alt="Mrityunjoy Saha"> 
+<img src="images/profile.jpg" loading="lazy" alt="Mrityunjoy Saha">
 
 <h3>Mrityunjoy Saha</h3>
 
