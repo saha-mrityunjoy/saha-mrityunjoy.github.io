@@ -87,14 +87,22 @@ background-image:
 linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
 url('images/houston1.jpg');
 background-size:cover;
-background-position:center 30%;
-
+background-position:center;
+background-attachment:fixed;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 }
 
+@media (max-width:768px){
+
+.banner{
+background-attachment:scroll;
+}
+
+}
+  
 /* Navigation */
 nav{
 background:#2a5298;
