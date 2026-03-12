@@ -877,22 +877,6 @@ margin:0 6px;
 font-size:13px;
 }
 
-/* Name in navigation bar */
-  
-.nav-name{
-font-weight:700;
-margin-right:25px;
-color:white;
-cursor:pointer;
-display:none;
-}
-
-/* Show when scrolling */
-
-nav.scrolled .nav-name{
-display:inline-block;
-}
-  
 /* Stack layout */
 .container{
 flex-direction:column;
@@ -1000,20 +984,7 @@ link.classList.add("active");
 });
 
 });
-
-
-window.addEventListener("scroll", function(){
-
-let nav = document.querySelector("nav");
-
-if(window.scrollY > 200){
-nav.classList.add("scrolled");
-}else{
-nav.classList.remove("scrolled");
-}
-
-});
-
+  
 </script>
 
 </head>
@@ -1043,8 +1014,6 @@ Director’s Fellow | CFD Researcher | Indian Institute of Technology Jodhpur
 </div>
 
 <nav>
-
-<span class="nav-name" onclick="topFunction()">Mrityunjoy Saha</span>
 
 <a href="#about">About</a>
 <a href="#research">Ongoing Research</a>
