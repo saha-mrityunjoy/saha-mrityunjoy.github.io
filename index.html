@@ -284,18 +284,25 @@ height:320px;
 background-position:center 30%;
 }
 
+/* Fix header overlap on mobile */
 header{
-top:20px;
+position:relative;
+top:auto;
+left:auto;
+transform:none;
+padding-top:80px;
 }
 
+/* Mobile font sizes */
 header h1{
-font-size:30px;
+font-size:34px;
 }
 
 header p{
-font-size:14px;
+font-size:16px;
 }
 
+/* Navigation */
 nav{
 font-size:12px;
 }
@@ -305,6 +312,7 @@ margin:0 6px;
 font-size:13px;
 }
 
+/* Stack layout */
 .container{
 flex-direction:column;
 }
