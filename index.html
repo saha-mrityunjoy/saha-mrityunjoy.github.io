@@ -680,6 +680,23 @@ font-size:13px;
 color:#555;
 }
 
+/* Scroll progress bar */
+
+#scroll-progress{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+width:0%;
+background:#1f3c88;
+z-index:2000;
+transition:width 0.1s ease;
+}
+
+.dark-mode #scroll-progress{
+background:#4c8dff;
+}
+  
 /* Back to top */
 #topBtn{
 position:fixed;
@@ -761,12 +778,28 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
 
+window.onscroll = function(){
+
+let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+let scrollHeight =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let progress = (scrollTop / scrollHeight) * 100;
+
+document.getElementById("scroll-progress").style.width = progress + "%";
+
+};
+  
 </script>
 
 </head>
 
 <body>
 
+<div id="scroll-progress"></div>
+  
 <header>
 
 <h1>Mrityunjoy Saha</h1>
@@ -1081,8 +1114,6 @@ Ph.D. thesis defense at the Indian Institute of Technology Jodhpur.
 </div>
 
 </details>
-
-
 
 <details>
 
