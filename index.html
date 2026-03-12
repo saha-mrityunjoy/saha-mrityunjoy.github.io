@@ -283,7 +283,20 @@ grid-template-columns:1fr 1fr 1fr;
 gap:25px;
 margin-top:15px;
 }
+  
+.teach-grid > div{
+padding-right:15px;
+border-right:1px solid #ddd;
+}
 
+.teach-grid > div:last-child{
+border-right:none;
+}
+
+.dark-mode .teach-grid > div{
+border-right:1px solid #444;
+}
+  
 @media (max-width:900px){
 .teach-grid{
 grid-template-columns:1fr;
