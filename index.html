@@ -117,6 +117,20 @@ text-decoration:none;
 font-weight:bold;
 }
 
+/* Active navigation link */
+
+nav a.active{
+background:white;
+color:#1f3c88;
+padding:6px 10px;
+border-radius:4px;
+}
+
+.dark-mode nav a.active{
+background:#2b3350;
+color:#8fb3ff;
+}
+  
 /* Layout */
 .container{
 display:flex;
@@ -826,6 +840,37 @@ section.classList.add("visible");
 
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
+
+/* Highlight active navigation link */
+
+const sections = document.querySelectorAll("h2[id]");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", function(){
+
+let current = "";
+
+sections.forEach(function(section){
+
+const sectionTop = section.offsetTop - 100;
+
+if(pageYOffset >= sectionTop){
+current = section.getAttribute("id");
+}
+
+});
+
+navLinks.forEach(function(link){
+
+link.classList.remove("active");
+
+if(link.getAttribute("href") === "#" + current){
+link.classList.add("active");
+}
+
+});
+
+});
   
 </script>
 
