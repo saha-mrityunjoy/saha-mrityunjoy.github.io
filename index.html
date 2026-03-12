@@ -353,6 +353,40 @@ border-radius:8px;
 box-shadow:0 2px 6px rgba(0,0,0,0.3);
 }
 
+/* Gallery cards */
+
+.gallery-card{
+background:white;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
+transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover{
+transform:translateY(-4px);
+box-shadow:0 6px 16px rgba(0,0,0,0.25);
+}
+
+.gallery-card img{
+width:100%;
+display:block;
+}
+
+.gallery-card figcaption{
+padding:8px 10px;
+font-size:14px;
+color:#444;
+text-align:center;
+}
+
+.dark-mode .gallery-card{
+background:#262b36;
+}
+
+.dark-mode .gallery-card figcaption{
+color:#ddd;
+}
 /* Metrics */
 .metrics{
 display:flex;
@@ -1086,13 +1120,22 @@ Flow instability in a rotating channel loaded with an anisotropic porous materia
 
 </div>
 
-<h2 id="figures" class="fade-section">Research Gallery</h2>
-
 <div class="gallery fade-section">
 
+<figure class="gallery-card">
 <img src="images/fig1.jpg" loading="lazy">
+<figcaption>Eigenvalue spectrum of rotating channel instability.</figcaption>
+</figure>
+
+<figure class="gallery-card">
 <img src="images/fig2.jpg" loading="lazy">
+<figcaption>Growth-rate curves from spectral stability analysis.</figcaption>
+</figure>
+
+<figure class="gallery-card">
 <img src="images/fig3.jpg" loading="lazy">
+<figcaption>Mode structure for unstable eigenfunctions.</figcaption>
+</figure>
 
 </div>
 
