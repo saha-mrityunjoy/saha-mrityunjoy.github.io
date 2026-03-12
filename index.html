@@ -484,6 +484,75 @@ color:#1f3c88;
 .dark-mode .resource-list li::before{
 color:#8fb3ff;
 }
+
+/* Accordion arrow */
+
+summary::before{
+content:"▶";
+display:inline-block;
+margin-right:8px;
+transition:transform 0.25s ease;
+}
+
+details[open] summary::before{
+transform:rotate(90deg);
+}
+
+/* Hover highlight (same interaction feel as teaching) */
+
+summary{
+padding:6px 4px;
+border-radius:4px;
+transition:background 0.2s ease;
+}
+
+summary:hover{
+background:#eef2ff;
+}
+
+.dark-mode summary:hover{
+background:#2b3350;
+}
+
+/* Resource list styling */
+
+.resource-list{
+margin-top:8px;
+padding-left:0;
+list-style:none;
+}
+
+.resource-list li{
+margin:6px 0;
+}
+
+.resource-list li::before{
+content:"✓";
+margin-right:6px;
+color:#1f3c88;
+font-weight:bold;
+}
+
+.dark-mode .resource-list li::before{
+color:#8fb3ff;
+}
+
+/* Shadow hover effect (same style as publication cards) */
+
+details{
+padding:6px 6px 8px 6px;
+border-radius:6px;
+transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+details:hover{
+transform:translateY(-2px);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dark-mode details:hover{
+box-shadow:0 4px 12px rgba(0,0,0,0.35);
+}
   
 /* Timeline */
 .timeline{
@@ -868,7 +937,7 @@ Teaching Assistant — Indian Institute of Technology Jodhpur
 <div class="paper">
 
 <details>
-<summary class="resource-title">Recommended Books</summary>
+<summary>Recommended Books</summary>
 
 <ul class="resource-list">
 <li>Hydrodynamic Stability – P. G. Drazin & W. H. Reid</li>
@@ -879,8 +948,9 @@ Teaching Assistant — Indian Institute of Technology Jodhpur
 
 </details>
 
+
 <details>
-<summary class="resource-title">Lecture Notes</summary>
+<summary>Lecture Notes</summary>
 
 <ul class="resource-list">
 <li><a href="#">Linear Algebra Notes</a></li>
@@ -890,8 +960,9 @@ Teaching Assistant — Indian Institute of Technology Jodhpur
 
 </details>
 
+
 <details>
-<summary class="resource-title">MATLAB / Computational Codes</summary>
+<summary>MATLAB / Computational Codes</summary>
 
 <ul class="resource-list">
 <li><a href="#">Orr–Sommerfeld Stability Solver</a></li>
@@ -901,8 +972,9 @@ Teaching Assistant — Indian Institute of Technology Jodhpur
 
 </details>
 
+
 <details>
-<summary class="resource-title">Datasets / Miscellaneous</summary>
+<summary>Datasets / Miscellaneous</summary>
 
 <ul class="resource-list">
 <li><a href="#">Fluid Stability Benchmark Data</a></li>
@@ -912,8 +984,8 @@ Teaching Assistant — Indian Institute of Technology Jodhpur
 </details>
 
 </div>
-
-  <!--    News    -->
+  
+<!--    News    -->
 <h2 id="newsletter">News</h2>
 
 <div class="paper">
