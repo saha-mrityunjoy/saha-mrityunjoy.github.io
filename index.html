@@ -233,6 +233,8 @@ display:block;
 margin:0 auto 10px auto;
 }
 */
+
+/* Profile photo */
   
 .profile-photo{
 width:150px;
@@ -241,6 +243,17 @@ border-radius:8px;
 object-fit:cover;
 display:block;
 margin:0 auto 12px auto;
+}
+
+/* Hover effect */
+
+.profile-photo{
+transition:transform 0.25s ease, filter 0.25s ease;
+}
+
+.profile-photo:hover{
+transform:scale(1.03);
+filter:brightness(1.05);
 }
   
 .sidebar h3{
