@@ -317,6 +317,32 @@ box-shadow:0 3px 12px rgba(0,0,0,0.6);
 transform:translateY(-3px);
 transition:0.2s ease;
 }
+
+/* Identity social icons */
+
+.profile-links{
+display:flex;
+justify-content:center;
+gap:14px;
+margin-top:8px;
+}
+
+.profile-links a{
+font-size:20px;
+color:#1f3c88;
+text-decoration:none;
+transition:color 0.2s ease;
+}
+
+.profile-links a:hover{
+color:#4c8dff;
+}
+
+/* Dark mode */
+
+.dark-mode .profile-links a{
+color:#8fb3ff;
+}
   
 /* Main content */
 .main{
@@ -1131,36 +1157,39 @@ Director’s Fellow | Fluid Dynamics Researcher | Indian Institute of Technology
 
 <div class="sidebar">
 
+<!-- Side Profile -->
+
 <div class="profile-fixed">
 
 <img class="profile-photo" src="images/profile.jpg" loading="lazy" alt="Mrityunjoy Saha">
 
 <h3>Mrityunjoy Saha</h3>
 
-</div>
-  
+<div class="profile-links">
+
+<a href="https://www.linkedin.com/in/saha-mrityunjoy/" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
 <a href="https://scholar.google.com/citations?hl=en&user=EuCJEhEAAAAJ" target="_blank">
-<i class="fa-solid fa-graduation-cap"></i> Google Scholar
+<i class="fa-solid fa-graduation-cap"></i>
 </a>
 
 <a href="https://orcid.org/0000-0001-5319-3705" target="_blank">
-<i class="fa-brands fa-orcid"></i> ORCID
-</a>
-
-<a href="https://www.linkedin.com/in/saha-mrityunjoy/" target="_blank">
-<i class="fa-brands fa-linkedin"></i> LinkedIn
+<i class="fa-brands fa-orcid"></i>
 </a>
 
 <a href="https://github.com" target="_blank">
-<i class="fa-brands fa-github"></i> GitHub
+<i class="fa-brands fa-github"></i>
 </a>
 
-<h4>Contact</h4>
-
-<p>
+<a href="mailto:saha.8@iitj.ac.in">
 <i class="fa-solid fa-envelope"></i>
-<a href="mailto:saha.8@iitj.ac.in">saha.8@iitj.ac.in</a>
-</p>
+</a>
+
+</div>
+
+</div>
 
 <a href="MrityunjoySahaCVA.pdf" target="_blank">
 <button>Academic CV</button>
