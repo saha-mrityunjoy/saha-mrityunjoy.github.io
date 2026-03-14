@@ -381,6 +381,24 @@ color:#4c8dff;
 .dark-mode .cv-links a{
 color:#8fb3ff;
 }
+
+/* CV dropdown animation */
+
+.cv-links{
+margin-top:8px;
+display:flex;
+flex-direction:column;
+gap:6px;
+align-items:center;
+opacity:0;
+transform:translateY(-5px);
+transition:opacity 0.25s ease, transform 0.25s ease;
+}
+
+.cv-dropdown[open] .cv-links{
+opacity:1;
+transform:translateY(0);
+}
   
 /* Main content */
 .main{
