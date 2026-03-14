@@ -343,6 +343,40 @@ color:#4c8dff;
 .dark-mode .profile-links a{
 color:#8fb3ff;
 }
+
+/* CV dropdown under name */
+
+.cv-dropdown summary{
+list-style:none;
+cursor:pointer;
+}
+
+.cv-dropdown summary::-webkit-details-marker{
+display:none;
+}
+
+.cv-links{
+margin-top:6px;
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.cv-links a{
+text-decoration:none;
+color:#1f3c88;
+font-size:14px;
+}
+
+.cv-links a:hover{
+color:#4c8dff;
+}
+
+/* Dark mode */
+
+.dark-mode .cv-links a{
+color:#8fb3ff;
+}
   
 /* Main content */
 .main{
@@ -1162,8 +1196,26 @@ Director’s Fellow | Fluid Dynamics Researcher | Indian Institute of Technology
 <div class="profile-fixed">
 
 <img class="profile-photo" src="images/profile.jpg" loading="lazy" alt="Mrityunjoy Saha">
+<details class="cv-dropdown">
 
-<h3>Mrityunjoy Saha</h3>
+<summary class="profile-name">
+Mrityunjoy Saha
+<i class="fa-solid fa-download"></i>
+</summary>
+
+<div class="cv-links">
+
+<a href="MrityunjoySahaCVA.pdf" target="_blank">
+<i class="fa-solid fa-file-arrow-down"></i> Academic CV
+</a>
+
+<a href="MrityunjoySahaCVI.pdf" target="_blank">
+<i class="fa-solid fa-file-arrow-down"></i> Industry CV
+</a>
+
+</div>
+
+</details>
 
 <div class="profile-links">
 
