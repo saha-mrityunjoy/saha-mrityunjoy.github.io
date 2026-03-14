@@ -339,6 +339,29 @@ color:#4c8dff;
 transform:translateY(-1px);
 }
 
+/* Identity divider */
+
+.profile-divider{
+height:1px;
+width:70%;
+margin:12px auto 6px auto;
+background:linear-gradient(
+to right,
+transparent,
+rgba(0,0,0,0.2),
+transparent
+);
+}
+
+.dark-mode .profile-divider{
+background:linear-gradient(
+to right,
+transparent,
+rgba(255,255,255,0.25),
+transparent
+);
+}
+  
 /* Dark mode */
 
 .dark-mode .profile-links a{
@@ -1239,6 +1262,8 @@ Mrityunjoy Saha
 
 </details>
 
+<div class="profile-divider"></div>
+  
 <div class="profile-links">
 
 <a href="https://scholar.google.com/citations?hl=en&user=EuCJEhEAAAAJ"
