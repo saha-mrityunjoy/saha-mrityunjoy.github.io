@@ -324,18 +324,19 @@ transition:0.2s ease;
 display:flex;
 justify-content:center;
 gap:14px;
-margin-top:8px;
+margin-top:10px;
 }
 
 .profile-links a{
 font-size:20px;
 color:#1f3c88;
 text-decoration:none;
-transition:color 0.2s ease;
+transition:color 0.2s ease, transform 0.2s ease;
 }
 
 .profile-links a:hover{
 color:#4c8dff;
+transform:translateY(-1px);
 }
 
 /* Dark mode */
@@ -344,6 +345,9 @@ color:#4c8dff;
 color:#8fb3ff;
 }
 
+.dark-mode .profile-links a:hover{
+color:#a9c3ff;
+}
 /* CV dropdown under name */
 
 .cv-dropdown summary{
