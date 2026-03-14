@@ -360,6 +360,75 @@ cursor:pointer;
 width:100%;
 margin-top:6px;
 }
+
+/* Research interest grid */
+
+.research-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:10px;
+}
+
+
+/* Research interest cards */
+
+.research-grid .paper{
+font-weight:500;
+font-size:16px;
+padding:18px;
+border-left:4px solid #1f3c88;
+background:#f4f7ff;
+display:flex;
+align-items:center;
+text-align:left;
+transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Research interest icons */
+
+.research-grid .paper i{
+margin-right:12px;
+color:#1f3c88;
+font-size:18px;
+flex-shrink:0;
+}
+
+
+/* Hover effect */
+
+.research-grid .paper:hover{
+transform:translateY(-3px);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+/* Dark mode */
+
+.dark-mode .research-grid .paper{
+border-left:4px solid #4c8dff;
+background:#1f2432;
+}
+
+.dark-mode .research-grid .paper i{
+color:#8fb3ff;
+}
+
+.dark-mode .research-grid .paper:hover{
+box-shadow:0 4px 12px rgba(0,0,0,0.35);
+}
+
+
+/* Mobile responsive */
+
+@media (max-width:768px){
+
+.research-grid{
+grid-template-columns:1fr;
+}
+
+}
   
 /* Publication card */
 .paper{
@@ -927,66 +996,6 @@ padding:20px;
 
 }
 
-/* Research interest grid */
-
-.research-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:10px;
-}
-
-
-/* Research interest cards */
-
-.research-grid .paper{
-font-weight:500;
-font-size:16px;
-padding:18px;
-border-left:4px solid #1f3c88;
-text-align:left;
-display:flex;
-align-items:center;
-}
-
-
-/* Research interest icons */
-
-.research-grid .paper i{
-margin-right:10px;
-color:#1f3c88;
-font-size:16px;
-}
-
-
-/* Hover effect */
-
-.research-grid .paper:hover{
-transform:translateY(-2px);
-transition:0.2s ease;
-}
-
-
-/* Dark mode */
-
-.dark-mode .research-grid .paper{
-border-left:4px solid #4c8dff;
-}
-
-.dark-mode .research-grid .paper i{
-color:#8fb3ff;
-}
-
-
-/* Mobile responsive */
-
-@media (max-width:768px){
-.research-grid{
-grid-template-columns:1fr;
-}
-
-}
-  
 </style>
 
 <script>
