@@ -34,15 +34,20 @@ color:#e6e6e6;
   
 /* Header */
 /* Header inside banner */
-
 header{
-position:sticky;
-top:40%;
-transform:translateY(-50%);
+position:absolute;
+top:42%;
+left:50%;
+transform:translate(-50%, -50%);
 width:100%;
 text-align:center;
 color:white;
 z-index:10;
+}
+  
+/* Fade effect for banner text */
+header{
+transition:opacity 0.2s linear;
 }
   
 /* Name */
@@ -1264,6 +1269,24 @@ link.classList.add("active");
 }
 
 });
+
+});
+
+window.addEventListener("scroll", function(){
+
+const banner = document.querySelector(".banner");
+const header = document.querySelector("header");
+
+const bannerHeight = banner.offsetHeight;
+const scrollY = window.scrollY;
+
+// Fade only within banner
+if(scrollY < bannerHeight){
+let opacity = 1 - (scrollY / bannerHeight);
+header.style.opacity = opacity;
+} else {
+header.style.opacity = 0;
+}
 
 });
   
