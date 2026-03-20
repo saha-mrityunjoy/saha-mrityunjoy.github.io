@@ -32,10 +32,11 @@ background:#1c1f26;
 color:#e6e6e6;
 }
   
-/* ===== Header (Hero text inside banner) ===== */
+/* ===== Banner Text Centering ===== */
 
 .banner header{
 position:absolute;
+
 top:50%;
 left:50%;
 transform:translate(-50%, -50%);
@@ -44,12 +45,13 @@ width:90%;
 text-align:center;
 color:white;
 
-z-index:10;
+z-index:2;
 
-/* smooth rendering */
+transition:opacity 0.2s linear;
 backface-visibility:hidden;
-}
 
+padding:0 15px;
+}
 
 /* ===== Name ===== */
 
@@ -1195,6 +1197,9 @@ top:50%;
 left:50%;
 transform:translate(-50%, -50%);
 width:92%;
+text-align:center;
+z-index:2;
+padding:0 10px;
 }
 
 /* ===== Text ===== */
