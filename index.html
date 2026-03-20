@@ -566,16 +566,15 @@ background:#20242c;
 
 h2{
 color:#1f3c88;
-
 border-left:5px solid #2a5298;
 
 padding-left:12px;
 
-margin-top:48px;
-margin-bottom:16px;
+margin-top:50px;
+margin-bottom:18px;
 
 font-weight:600;
-letter-spacing:0.3px;
+letter-spacing:0.4px;
 
 scroll-margin-top:90px;
 }
@@ -600,25 +599,22 @@ width:100%;
 margin-top:6px;
 }
 
-/* ===== Research cards (keep 2-column, improve consistency) ===== */
-.research-grid{
-grid-template-columns:1fr 1fr;
-}
+/* ===== Research cards (aligned with main cards) ===== */
 
 .research-grid .paper{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 
 font-weight:500;
-font-size:15.5px;
+font-size:16px;
 
 padding:16px;
 
 border-left:4px solid #1f3c88;
 
-/* slightly softer than main cards (nice hierarchy) */
-background:linear-gradient(180deg,#f9fbff 0%,#eef3ff 100%);
+/* Match main card gradient */
+background:linear-gradient(180deg,#fbfcff 0%,#f3f6ff 100%);
 
 border-radius:8px;
 
@@ -628,11 +624,11 @@ box-shadow 0.2s ease,
 border-color 0.2s ease;
 }
 
-/* Hover (slightly softer than main .paper) */
+/* Hover = SAME as main cards */
 
 .research-grid .paper:hover{
-transform:translateY(-3px);
-box-shadow:0 6px 16px rgba(0,0,0,0.10);
+transform:translateY(-4px);
+box-shadow:0 8px 22px rgba(0,0,0,0.12);
 border-left-color:#4c8dff;
 }
 
@@ -640,20 +636,20 @@ border-left-color:#4c8dff;
 
 .research-grid .paper i{
 margin-right:8px;
-font-size:17px;
 color:#1f3c88;
+font-size:18px;
 flex-shrink:0;
 }
 
 /* Dark mode */
 
 .dark-mode .research-grid .paper{
-background:linear-gradient(180deg,#252a38 0%,#1b1f2b 100%);
+background:linear-gradient(180deg,#262b36 0%,#1e222c 100%);
 border-left:4px solid #4c8dff;
 }
 
 .dark-mode .research-grid .paper:hover{
-box-shadow:0 6px 16px rgba(0,0,0,0.4);
+box-shadow:0 8px 22px rgba(0,0,0,0.45);
 }
 
 .dark-mode .research-grid .paper i{
@@ -1008,12 +1004,12 @@ transition:transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 details:hover{
-transform:translateY(-3px);
-box-shadow:0 6px 18px rgba(0,0,0,0.1);
+transform:translateY(-2px);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .dark-mode details:hover{
-box-shadow:0 6px 18px rgba(0,0,0,0.4);
+box-shadow:0 4px 12px rgba(0,0,0,0.35);
 }
   
 /* ===== News Timeline ===== */
@@ -1539,23 +1535,23 @@ Mathematical Modeling and Simulation
 <h2 id="research" class="fade-section">Ongoing Research</h2>
 
 <div class="paper fade-section">
-<p>
+
 Modal and non-modal stability of Poiseuille flow through anisotropic inhomogeneous porous materials.
-<p>
+
 </div>
 
 
 <div class="paper fade-section">
-<p>
+
 Dual instability in a vertical crossflow-induced oscillating channel flow.
-<p>
+
 </div>
 
 
 <div class="paper fade-section">
-<p>
+
 Effect of uniform vertical crossflow on rotational instability in a channel flow.
-<p>
+
 </div>
 
 <h2 id="publications" class="fade-section">Publications</h2>
