@@ -37,11 +37,10 @@ color:#e6e6e6;
 .banner header{
 position:absolute;
 
-top:50%;
 left:50%;
-transform:translate(-50%, -50%);
+transform:translateX(-50%);
 
-width:90%;
+width:85%;
 text-align:center;
 color:white;
 
@@ -1193,10 +1192,10 @@ background-attachment:scroll;
 
 .banner header{
 position:absolute;
-top:50%;
+
 left:50%;
-transform:translate(-50%, -50%);
-width:92%;
+
+width:85%;
 text-align:center;
 z-index:2;
 padding:0 10px;
@@ -1339,6 +1338,43 @@ link.classList.add("active");
 });
 
 });
+
+/* ===== Dynamic banner text centering ===== */
+
+function updateBannerText(){
+
+const banner = document.querySelector(".banner");
+const header = document.querySelector(".banner header");
+
+if(!banner || !header) return;
+
+const rect = banner.getBoundingClientRect();
+
+/* visible portion of banner */
+const visibleTop = Math.max(rect.top, 0);
+const visibleBottom = Math.min(rect.bottom, window.innerHeight);
+const visibleHeight = visibleBottom - visibleTop;
+
+/* only when banner is visible */
+if(visibleHeight > 0){
+
+/* center of visible portion */
+const centerY = visibleTop + visibleHeight / 2;
+
+/* convert to banner-relative position */
+const offset = centerY - rect.top;
+
+header.style.top = offset + "px";
+
+}
+
+}
+
+/* run on scroll + resize */
+
+window.addEventListener("scroll", updateBannerText);
+window.addEventListener("resize", updateBannerText);
+window.addEventListener("load", updateBannerText);
   
 </script>
 
