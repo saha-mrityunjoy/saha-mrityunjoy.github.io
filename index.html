@@ -354,21 +354,29 @@ align-items:center;
 display:block;
 }
 
-/* Profile identity card */
+/* ===== Profile identity card ===== */
 
 .profile-fixed{
 position:sticky;
 top:80px;
+
 background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.15);
+padding:16px;
+border-radius:12px;
+
+box-shadow:0 4px 14px rgba(0,0,0,0.12);
+
 margin-bottom:20px;
 z-index:10;
 text-align:center;
+
+/* smooth motion */
+transition:
+transform 0.25s ease,
+box-shadow 0.25s ease;
 }
 
-/* Identity card entrance animation */
+/* Entrance animation (kept, slightly smoother) */
 
 .profile-fixed{
 animation:profileFade 0.6s ease;
@@ -377,59 +385,82 @@ animation:profileFade 0.6s ease;
 @keyframes profileFade{
 from{
 opacity:0;
-transform:translateY(10px);
+transform:translateY(12px);
 }
 to{
 opacity:1;
 transform:translateY(0);
 }
 }
-  
-/* Dark mode */
+
+/* Hover refinement */
+
+.profile-fixed:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,0.18);
+}
+
+/* ===== Dark mode ===== */
 
 .dark-mode .profile-fixed{
 background:#262b36;
-box-shadow:0 3px 12px rgba(0,0,0,0.6);
+box-shadow:0 4px 16px rgba(0,0,0,0.5);
 }
 
-.profile-fixed:hover{
-transform:translateY(-3px);
-transition:0.2s ease;
+.dark-mode .profile-fixed:hover{
+box-shadow:0 12px 32px rgba(0,0,0,0.7);
 }
 
-/* Identity social icons */
+
+/* ===== Identity social icons ===== */
 
 .profile-links{
 display:flex;
 justify-content:center;
-gap:14px;
-margin-top:10px;
+gap:16px;
+margin-top:12px;
 }
 
 .profile-links a{
 font-size:20px;
 color:#1f3c88;
 text-decoration:none;
-transition:color 0.2s ease, transform 0.2s ease;
+
+transition:
+color 0.2s ease,
+transform 0.2s ease;
 }
+
+/* cleaner hover */
 
 .profile-links a:hover{
 color:#4c8dff;
-transform:translateY(-1px);
+transform:translateY(-2px) scale(1.05);
 }
 
-/* Identity divider */
+/* ===== Divider ===== */
 
 .profile-divider{
 height:1px;
 width:70%;
-margin:14px auto 8px auto;
+margin:14px auto 10px auto;
+
 background:linear-gradient(
 to right,
 transparent,
 rgba(0,0,0,0.2),
 transparent
 );
+}
+
+/* ===== Dark mode icons ===== */
+
+.dark-mode .profile-links a{
+color:#8fb3ff;
+}
+
+.dark-mode .profile-links a:hover{
+color:#a9c3ff;
 }
 
 .dark-mode .profile-divider{
@@ -439,16 +470,6 @@ transparent,
 rgba(255,255,255,0.25),
 transparent
 );
-}
-  
-/* Dark mode */
-
-.dark-mode .profile-links a{
-color:#8fb3ff;
-}
-
-.dark-mode .profile-links a:hover{
-color:#a9c3ff;
 }
   
 /* CV dropdown under name */
