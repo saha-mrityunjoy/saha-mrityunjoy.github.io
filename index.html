@@ -154,7 +154,7 @@ linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.18)),
 url('images/houston1.jpg');
 
 background-size:cover;
-background-position:center 30%;
+background-position:center 28%;
 background-attachment:fixed;
 
 display:flex;
@@ -1186,30 +1186,38 @@ width:auto;
 
 @media (max-width:768px){
 
+/* ===== Banner ===== */
+
 .banner{
-height:320px;
-background-position:50% 10%;
+height:340px;
+background-position:center 12%;
+background-attachment:scroll;
 }
 
-/* Fix header overlap on mobile */
-header{
-position:relative;
-top:auto;
-left:auto;
-transform:none;
-padding-top:80px;
+/* ===== Header stays inside banner ===== */
+
+.banner header{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+width:92%;
 }
 
-/* Mobile font sizes */
+/* ===== Text ===== */
+
 header h1{
 font-size:34px;
+letter-spacing:1px;
 }
 
 header p{
 font-size:16px;
+margin-top:8px;
 }
 
-/* Navigation */
+/* ===== Navigation ===== */
+
 nav{
 font-size:12px;
 }
@@ -1219,7 +1227,8 @@ margin:0 6px;
 font-size:13px;
 }
 
-/* Stack layout */
+/* ===== Layout ===== */
+
 .container{
 flex-direction:column;
 }
@@ -1466,7 +1475,7 @@ title="Email">
 
 <p>
 This website is hosted using GitHub Pages.<br>
-Initial webpage design gets assistance from ChatGPT and Gemini.
+Initial webpage design gets assistance from AI tools.
 </p>
 
 </div>
