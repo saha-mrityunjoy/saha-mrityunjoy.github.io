@@ -32,51 +32,65 @@ background:#1c1f26;
 color:#e6e6e6;
 }
   
-/* Header 
-header{
+/* ===== Header (Hero text inside banner) ===== */
+
+.banner header{
 position:absolute;
-top:280px;
+top:50%;
 left:50%;
 transform:translate(-50%, -50%);
-width:100%;
+
+width:90%;
 text-align:center;
 color:white;
+
 z-index:10;
-} */
-  
-header{
-width:100%;
-text-align:center;
-color:white;
-z-index:10;
+
+/* smooth rendering */
+backface-visibility:hidden;
 }
-/* Name */
+
+
+/* ===== Name ===== */
 
 header h1{
 font-size:76px;
 font-weight:700;
-letter-spacing:2.5px;
+letter-spacing:2px;
 font-family:"Georgia", serif;
+
 margin:0;
 line-height:1.1;
+
 text-shadow:0 3px 12px rgba(0,0,0,0.7);
 }
 
 
-/* Tagline */
+/* ===== Tagline ===== */
 
 header p{
 margin-top:14px;
 font-size:22px;
 letter-spacing:1px;
 font-weight:400;
+
+opacity:0.92;
+
 text-shadow:1px 2px 6px rgba(0,0,0,0.6);
 }
 
+
+/* ===== Mobile ===== */
+
 @media (max-width:768px){
 
+.banner header{
+top:52%;
+width:92%;
+}
+
 header h1{
-font-size:36px;
+font-size:34px;
 letter-spacing:1px;
 }
 
