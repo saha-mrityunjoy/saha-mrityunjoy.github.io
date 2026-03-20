@@ -1350,27 +1350,37 @@ if(!banner || !header) return;
 
 const rect = banner.getBoundingClientRect();
 
-/* visible portion of banner */
+/* visible portion */
 const visibleTop = Math.max(rect.top, 0);
 const visibleBottom = Math.min(rect.bottom, window.innerHeight);
 const visibleHeight = visibleBottom - visibleTop;
 
-/* only when banner is visible */
+/* when banner visible */
 if(visibleHeight > 0){
 
-/* center of visible portion */
+/* vertical centering */
 const centerY = visibleTop + visibleHeight / 2;
-
-/* convert to banner-relative position */
 const offset = centerY - rect.top;
 
 header.style.top = offset + "px";
 
-}
+/* ===== Premium effects ===== */
+
+/* progress (0 → 1) */
+const progress = 1 - (visibleHeight / rect.height);
+
+/* fade out */
+header.style.opacity = 1 - progress * 0.9;
+
+/* slight scale down */
+const scale = 1 - progress * 0.08;
+header.style.transform = `translateX(-50%) scale(${scale})`;
 
 }
 
-/* run on scroll + resize */
+}
+
+/* events */
 
 window.addEventListener("scroll", updateBannerText);
 window.addEventListener("resize", updateBannerText);
