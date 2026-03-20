@@ -619,52 +619,54 @@ grid-template-columns:1fr;
 
 }
   
-/* Publication card */
-.paper{
-padding:15px;
-border-left:4px solid #1f3c88;
-background:#f9fbff;
-margin-bottom:15px;
-}
-
-.dark-mode .paper{
-background:#262b36;
-border-left:4px solid #4c8dff;
-}
-
-.dark-mode a{
-color:#7aa2ff;
-}
- /* Publication card */
+/* ===== Publication / Card ===== */
 
 .paper{
 padding:18px 18px 16px 18px;
 border-left:4px solid #1f3c88;
-background:#f9fbff;
+
+background:linear-gradient(180deg,#fbfcff 0%,#f3f6ff 100%);
+
 margin-bottom:18px;
-border-radius:6px;
+border-radius:8px;
 line-height:1.5;
-transition:transform 0.15s ease, box-shadow 0.15s ease;
+
+transition:
+transform 0.2s ease,
+box-shadow 0.2s ease,
+border-color 0.2s ease;
 }
+
+/* Hover effect (premium lift) */
 
 .paper:hover{
-transform:translateY(-2px);
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transform:translateY(-4px);
+box-shadow:0 8px 22px rgba(0,0,0,0.12);
+border-left-color:#4c8dff;
 }
 
-.dark-mode .paper{
-background:#262b36;
-border-left:4px solid #4c8dff;
-box-shadow:none;
-}
-
-.dark-mode a{
-color:#7aa2ff;
-}
+/* Paragraph readability */
 
 .paper p{
 text-align:justify;
 line-height:1.7;
+}
+
+/* Dark mode */
+
+.dark-mode .paper{
+background:linear-gradient(180deg,#262b36 0%,#1e222c 100%);
+border-left:4px solid #4c8dff;
+}
+
+.dark-mode .paper:hover{
+box-shadow:0 8px 22px rgba(0,0,0,0.45);
+}
+
+/* Links */
+
+.dark-mode a{
+color:#7aa2ff;
 }
   
 /* Research gallery */
