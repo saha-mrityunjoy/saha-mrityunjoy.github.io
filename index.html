@@ -599,61 +599,62 @@ width:100%;
 margin-top:6px;
 }
 
-/* ===== Research cards (aligned with main cards) ===== */
+/* Research interest grid */
+
+.research-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:10px;
+}
+
+
+/* Research interest cards */
 
 .research-grid .paper{
-display:flex;
-align-items:center;
-gap:12px;
-
 font-weight:500;
 font-size:16px;
-
-padding:16px;
-
+padding:18px;
 border-left:4px solid #1f3c88;
-
-/* Match main card gradient */
-background:linear-gradient(180deg,#fbfcff 0%,#f3f6ff 100%);
-
-border-radius:8px;
-
-transition:
-transform 0.2s ease,
-box-shadow 0.2s ease,
-border-color 0.2s ease;
+background:linear-gradient(180deg,#f8faff 0%,#eef2ff 100%);
+display:flex;
+align-items:center;
+text-align:left;
+transition:transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover = SAME as main cards */
 
-.research-grid .paper:hover{
-transform:translateY(-4px);
-box-shadow:0 8px 22px rgba(0,0,0,0.12);
-border-left-color:#4c8dff;
-}
-
-/* Icons */
+/* Research interest icons */
 
 .research-grid .paper i{
-margin-right:8px;
+margin-right:12px;
 color:#1f3c88;
 font-size:18px;
 flex-shrink:0;
 }
 
+
+/* Hover effect */
+
+.research-grid .paper:hover{
+transform:translateY(-3px);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+
 /* Dark mode */
 
 .dark-mode .research-grid .paper{
-background:linear-gradient(180deg,#262b36 0%,#1e222c 100%);
 border-left:4px solid #4c8dff;
-}
-
-.dark-mode .research-grid .paper:hover{
-box-shadow:0 8px 22px rgba(0,0,0,0.45);
+background:linear-gradient(180deg,#252a38 0%,#1b1f2b 100%);
 }
 
 .dark-mode .research-grid .paper i{
 color:#8fb3ff;
+}
+
+.dark-mode .research-grid .paper:hover{
+box-shadow:0 4px 12px rgba(0,0,0,0.35);
 }
   
 /* ===== Publication / Card ===== */
@@ -1875,3 +1876,4 @@ Presented research at the International Conference on Recent Advances in Fluid M
 
 </body>
 </html>
+  
