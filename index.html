@@ -610,7 +610,7 @@ margin-top:10px;
 }
 
 
-/* ===== Research interest cards===== 
+/* ===== Research interest cards===== */
 
 .research-grid .paper{
 font-weight:500;
@@ -625,14 +625,14 @@ display:flex;
 align-items:center;
 text-align:left;
 
-/* smoother + consistent with main cards 
+/* smoother + consistent with main cards */
 transition:
 transform 0.2s ease,
 box-shadow 0.2s ease,
 border-color 0.2s ease;
 }
 
-/* Icons 
+/* Icons */
 
 .research-grid .paper i{
 margin-right:12px;
@@ -641,7 +641,7 @@ font-size:18px;
 flex-shrink:0;
 }
 
-/* Hover (slightly lighter than main cards) 
+/* Hover (slightly lighter than main cards) */
 
 .research-grid .paper:hover{
 transform:translateY(-3px);
@@ -649,7 +649,7 @@ box-shadow:0 6px 16px rgba(0,0,0,0.10);
 border-left-color:#4c8dff;
 }
 
-/* Dark mode 
+/* Dark mode */
 
 .dark-mode .research-grid .paper{
 border-left:4px solid #4c8dff;
@@ -663,37 +663,34 @@ color:#8fb3ff;
 .dark-mode .research-grid .paper:hover{
 box-shadow:0 6px 16px rgba(0,0,0,0.35);
 }
-*/
   
-/* ===== Unified Card Style (Research-style for ALL) ===== */
+/* ===== Publication / Card ===== */
 
 .paper{
-font-weight:500;
-font-size:16px;
-
-padding:18px;
+padding:18px 18px 16px 18px;
 border-left:4px solid #1f3c88;
 
-background:linear-gradient(180deg,#f8faff 0%,#eef2ff 100%);
+background:linear-gradient(180deg,#fbfcff 0%,#f3f6ff 100%);
 
-text-align:left;
+margin-bottom:20px;
+border-radius:8px;
+line-height:1.5;
 
-/* smooth premium feel */
 transition:
 transform 0.2s ease,
 box-shadow 0.2s ease,
 border-color 0.2s ease;
 }
 
-/* Hover */
+/* Hover effect (premium lift) */
 
 .paper:hover{
-transform:translateY(-3px);
-box-shadow:0 6px 16px rgba(0,0,0,0.10);
+transform:translateY(-4px);
+box-shadow:0 8px 22px rgba(0,0,0,0.12);
 border-left-color:#4c8dff;
 }
 
-/* Paragraph */
+/* Paragraph readability */
 
 .paper p{
 text-align:justify;
@@ -703,14 +700,14 @@ line-height:1.7;
 /* Dark mode */
 
 .dark-mode .paper{
+background:linear-gradient(180deg,#262b36 0%,#1e222c 100%);
 border-left:4px solid #4c8dff;
-background:linear-gradient(180deg,#252a38 0%,#1b1f2b 100%);
 }
 
 .dark-mode .paper:hover{
-box-shadow:0 6px 16px rgba(0,0,0,0.35);
+box-shadow:0 8px 22px rgba(0,0,0,0.45);
 }
-  
+
 /* Links */
 
 .dark-mode a{
