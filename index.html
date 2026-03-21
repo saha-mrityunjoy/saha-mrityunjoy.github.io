@@ -1162,7 +1162,8 @@ transform:translateY(0);
   
 .fade-section{
 opacity:0;
-transition:opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+transition:opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+will-change:opacity;
 }
 
 .fade-section.visible{
@@ -1321,7 +1322,7 @@ sections.forEach(function(section){
 let position = section.getBoundingClientRect().top;
 let screenHeight = window.innerHeight;
 
-if(position < screenHeight - 80){
+if(position < screenHeight * 0.9){
 section.classList.add("visible");
 }
 
@@ -1409,6 +1410,21 @@ header.style.transform = `translateX(-50%) scale(${scale})`;
 window.addEventListener("scroll", updateBannerText);
 window.addEventListener("resize", updateBannerText);
 window.addEventListener("load", updateBannerText);
+
+sections.forEach(function(section, index){
+
+let position = section.getBoundingClientRect().top;
+let screenHeight = window.innerHeight;
+
+if(position < screenHeight * 0.9){
+
+setTimeout(function(){
+section.classList.add("visible");
+}, index * 80);   // small delay
+
+}
+
+});
   
 </script>
 
