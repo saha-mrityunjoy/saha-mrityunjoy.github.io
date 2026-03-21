@@ -707,21 +707,25 @@ border-left:4px solid #4c8dff;
 box-shadow:0 8px 22px rgba(0,0,0,0.45);
 }
 
-/* FORCE consistent lift everywhere */
+/* ===== Premium soft lift ===== */
 
 .paper{
+transition:
+transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+border-color 0.25s ease;
+
 transform:translateY(0);
+will-change:transform;
 }
 
 .paper:hover{
-transform:translateY(-4px);
-box-shadow:0 8px 22px rgba(0,0,0,0.12);
+transform:translateY(-2px);   /* reduced from -4px */
+box-shadow:0 6px 18px rgba(0,0,0,0.10);  /* softer shadow */
+border-left-color:#4c8dff;
 z-index:5;
 }
-
-.paper{
-will-change:transform;
-}
+  
 /* Links */
 
 .dark-mode a{
