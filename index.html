@@ -707,6 +707,21 @@ border-left:4px solid #4c8dff;
 box-shadow:0 8px 22px rgba(0,0,0,0.45);
 }
 
+/* FORCE consistent lift everywhere */
+
+.paper{
+transform:translateY(0);
+}
+
+.paper:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 22px rgba(0,0,0,0.12);
+z-index:5;
+}
+
+.paper{
+will-change:transform;
+}
 /* Links */
 
 .dark-mode a{
