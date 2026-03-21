@@ -80,7 +80,6 @@ opacity:0.92;
 text-shadow:1px 2px 6px rgba(0,0,0,0.6);
 }
 
-  
 /* Dark/Light Toggle */
 .toggle{
 position:fixed;
@@ -1175,9 +1174,14 @@ border:none;
 width:auto;
 }
 
-#about .paper{
-background:#f9fbff;
-border-left:4px solid #1f3c88;
+/* Ensure lift works for all cards */
+
+.paper{
+display:block;
+position:relative;
+}
+.main{
+overflow:visible;
 }
   
 /* ===== MOBILE RESPONSIVE ===== */
